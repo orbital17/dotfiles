@@ -14,7 +14,10 @@ abbr gcmu 'git commit -m update'
 abbr gc 'git checkout'
 abbr gcb 'git checkout -b'
 abbr gpb 'git push -u origin HEAD'
-abbr gbd 'git branch -d'
+abbr gd 'git branch -d'
+function gdcb --wraps git --description 'delete create branch'
+    git branch -d $argv; git checkout -b $argv
+end
 
 alias gl "git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short --graph" 
 
