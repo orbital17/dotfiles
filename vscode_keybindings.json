@@ -1,0 +1,58 @@
+// ~/Library/Application Support/Code/User/keybindings.json
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new"
+  },
+  {
+    "key": "cmd+1",
+    "command": "workbench.action.terminal.focusAtIndex1"
+  },
+  {
+    "key": "cmd+2",
+    "command": "workbench.action.terminal.focusAtIndex2"
+  },
+  {
+    "key": "cmd+3",
+    "command": "workbench.action.terminal.focusAtIndex3"
+  },
+  {
+    "key": "cmd+4",
+    "command": "workbench.action.terminal.focusAtIndex4"
+  },
+  {
+    "key": "cmd+5",
+    "command": "workbench.action.terminal.focusAtIndex5"
+  },
+  {
+    "key": "cmd+6",
+    "command": "workbench.action.terminal.focusAtIndex6"
+  },
+  {
+    "key": "cmd+7",
+    "command": "workbench.action.terminal.focusAtIndex7"
+  },
+  {
+    "key": "cmd+8",
+    "command": "workbench.action.terminal.focusAtIndex8"
+  },
+  {
+    "key": "cmd+j",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "explorer.newFile"
+  }
+]

@@ -1,0 +1,5 @@
+[user]
+        email = olexiy.tkachenko@gmail.com
+        name = tkachenko
+[core]
+        editor = nvim
