@@ -11,6 +11,8 @@ zplug "lib/*", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 
+zplug "zsh-users/zsh-history-substring-search", as:plugin
+
 # export NVM_LAZY_LOAD=true
 zplug "lukechilds/zsh-nvm"
 
@@ -31,6 +33,9 @@ fi
 
 # Then, source plugins and add commands to $PATH
 zplug load #--verbose
+
+bindkey '\eOA' history-substring-search-up
+bindkey '\eOB' history-substring-search-down
 
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
