@@ -1,20 +1,9 @@
 {
     "editor.formatOnSave": false,
-    "editor.minimap.enabled": false,
     "zenMode.hideTabs": false,
-    "workbench.colorTheme": "Monokai",
-    "emeraldwalk.runonsave": {
-        "commands": [
-            {
-                "match": "\\.hs$",
-                "cmd": "bash ~/src/reloadGHCI.sh"
-            }
-        ]
-    },
     "window.zoomLevel": 0,
     "editor.renderWhitespace": "all",
-    "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "es5",
-    "editor.tabSize": 4,
+    "terminal.integrated.shell.osx": "/bin/zsh"
 }
