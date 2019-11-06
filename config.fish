@@ -1,11 +1,8 @@
-
 set -x LC_ALL en_US.UTF-8
 set -x LANG en_US.UTF-8
 
-abbr vim=nvim
-# alias emacs="emacsclient -q -a ''"
+abbr vim 'nvim'
 alias editor=nvim
-# set -Ux EDITOR nvim
 
 abbr gs 'git status'
 abbr ga 'git add .; git status'
@@ -33,13 +30,12 @@ export NVM_DIR="$HOME/.nvm"
 alias conffish 'editor ~/.config/fish/config.fish'
 alias confnvim 'editor ~/.config/nvim/init.vim'
 
-export GOPATH=(go env GOPATH)
-set PATH $PATH (go env GOPATH)
-set PATH $PATH (go env GOPATH)/bin
-set PATH $PATH ~/.meteor 
-eval (direnv hook fish)
+# export GOPATH=(go env GOPATH)
+# set PATH $PATH (go env GOPATH)
+# set PATH $PATH (go env GOPATH)/bin
+# set PATH $PATH ~/.meteor 
+# eval (direnv hook fish)
 
-source ~/.cargo/env
+# source ~/.cargo/env
 
 set fish_greeting ""
-# eval (direnv hook fish)
