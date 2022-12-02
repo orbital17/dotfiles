@@ -20,7 +20,7 @@
 
   call plug#end()
 
-  colorscheme OceanicNext
+  "colorscheme OceanicNext
 
   set number 
 

@@ -3,10 +3,12 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-export ZPLUG_HOME=/usr/local/opt/zplug
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
-zplug "lib/*", from:oh-my-zsh
+# zplug "lib/*", from:oh-my-zsh
 # zplug "plugins/git", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
@@ -61,6 +63,8 @@ export CLICOLOR_FORCE=1
 
 alias vim='nvim'
 alias editor=nvim
+
+alias ls='ls -la'
 
 alias gs='git status'
 alias ga='git add .; git status'
