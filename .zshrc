@@ -54,6 +54,8 @@ SPACESHIP_PROMPT_ORDER=(
   char          # Prompt character
 )
 
+eval "$(fasd --init auto)"
+alias c='a -e code'
 
 # Enable colored output for ls
 unset LSCOLORS

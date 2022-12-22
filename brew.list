@@ -1,0 +1,8 @@
+brew install nvim
+brew install zsh
+brew install zplug
+brew install --cask iterm2
+brew install gdb
+brew install errno
+brew install htop
+brew install fasd
