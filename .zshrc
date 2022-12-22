@@ -9,13 +9,13 @@ export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 zplug "robbyrussell/oh-my-zsh", as:plugin, use:"lib/*.zsh", ignore:"lib/vcs_info.zsh"
-zplug "plugins/git", from:oh-my-zsh
-zplug "zsh-users/zsh-syntax-highlighting"
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-history-substring-search"
+zplug "plugins/git", from:oh-my-zsh, defer:2
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-autosuggestions", defer:2
+zplug "zsh-users/zsh-history-substring-search", defer:2
 
 # export NVM_LAZY_LOAD=true
-zplug "lukechilds/zsh-nvm"
+zplug "lukechilds/zsh-nvm", defer:2
 
 export SPACESHIP_GIT_SYMBOL=''
 zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
