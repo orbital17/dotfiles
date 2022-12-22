@@ -8,12 +8,11 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
-# zplug "lib/*", from:oh-my-zsh
-# zplug "plugins/git", from:oh-my-zsh
+zplug "robbyrussell/oh-my-zsh", as:plugin, use:"lib/*.zsh", ignore:"lib/vcs_info.zsh"
+zplug "plugins/git", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
-
-zplug "zsh-users/zsh-history-substring-search", as:plugin
+zplug "zsh-users/zsh-history-substring-search"
 
 # export NVM_LAZY_LOAD=true
 zplug "lukechilds/zsh-nvm"
@@ -70,33 +69,33 @@ alias gs='git status'
 alias ga='git add .; git status'
 alias gcm='git commit'
 alias gcma='git commit --amend'
-alias gcmnv='git commit --no-verify'
-alias gcmnva='git commit --no-verify --amend'
 alias gc='git checkout'
 alias gcb='git checkout -b'
 alias gpb='git push -u origin HEAD'
-alias gd='git branch -d'
 alias gl="git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short --graph"
+# alias gcmnv='git commit --no-verify'
+# alias gcmnva='git commit --no-verify --amend'
+# alias gd='git branch -d'
 
-alias dcd='docker-compose down && docker system prune -f'
-alias dcu='docker-compose down && docker system prune -f && docker-compose up -d --build'
+# alias dcd='docker-compose down && docker system prune -f'
+# alias dcu='docker-compose down && docker system prune -f && docker-compose up -d --build'
 
-function ddac(){
-# Docker - delete all containers
-  docker ps -a | awk 'NR>1 {print }' | xargs docker rm -f
-}
+# function ddac(){
+# # Docker - delete all containers
+#   docker ps -a | awk 'NR>1 {print }' | xargs docker rm -f
+# }
 
-function ddai(){
-# Docker - delete all images
-  docker images | awk 'NR>1 {print }' | xargs doker rmi -f
-}
+# function ddai(){
+# # Docker - delete all images
+#   docker images | awk 'NR>1 {print }' | xargs doker rmi -f
+# }
 
-function dlsof(){
-# Docker - display all ports exposed by docker container
-  lsof -Pnl +M -i -cmd | grep -E "LISTEN|TCP"   | grep "com\.dock"
-}
+# function dlsof(){
+# # Docker - display all ports exposed by docker container
+#   lsof -Pnl +M -i -cmd | grep -E "LISTEN|TCP"   | grep "com\.dock"
+# }
 
 # [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# export PATH="$PATH:$HOME/.rvm/bin"
