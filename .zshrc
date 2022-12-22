@@ -75,29 +75,5 @@ alias gc='git checkout'
 alias gcb='git checkout -b'
 alias gpb='git push -u origin HEAD'
 alias gl="git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short --graph"
-# alias gcmnv='git commit --no-verify'
-# alias gcmnva='git commit --no-verify --amend'
-# alias gd='git branch -d'
 
-# alias dcd='docker-compose down && docker system prune -f'
-# alias dcu='docker-compose down && docker system prune -f && docker-compose up -d --build'
-
-# function ddac(){
-# # Docker - delete all containers
-#   docker ps -a | awk 'NR>1 {print }' | xargs docker rm -f
-# }
-
-# function ddai(){
-# # Docker - delete all images
-#   docker images | awk 'NR>1 {print }' | xargs doker rmi -f
-# }
-
-# function dlsof(){
-# # Docker - display all ports exposed by docker container
-#   lsof -Pnl +M -i -cmd | grep -E "LISTEN|TCP"   | grep "com\.dock"
-# }
-
-# [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-# export PATH="$PATH:$HOME/.rvm/bin"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
