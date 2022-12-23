@@ -7,3 +7,5 @@ brew install errno
 brew install htop
 brew install fasd
 brew install fzf
+brew install bat
+brew install nnn

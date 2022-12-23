@@ -62,6 +62,8 @@ unset LSCOLORS
 export CLICOLOR=1
 export CLICOLOR_FORCE=1
 
+export NNN_OPENER='code'
+
 alias vim='nvim'
 alias editor=nvim
 
